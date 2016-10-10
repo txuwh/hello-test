@@ -1,0 +1,11 @@
+<?xml version="1.0'?>
+
+    <project name="hello-world" default="build" basedir=".">
+
+        <target name="build">
+            <mkdir dir="build"/>
+            <exec executable="g++" dir="build" failonerror="true">
+                <arg line = "-g -o hello.exe ../hello_world.cpp"/>
+            </exec>
+        </target>
+    </project>
